@@ -1,0 +1,41 @@
+body {
+  background: #eee;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 80%;
+  background: #fff;
+}
+#box-space {
+  width: 400 px;
+  height: 40vh;
+  border: 1px solid;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  position: relative;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+#box {
+  box-sizing: border-box;
+  background: orange;
+  position: absolute;
+  width: 100px;
+  height: 200px;
+  top: 0px;
+  left: 0px;
+}
+
+.btn-space {
+  text-align: center;
+  margin-bottom: 10px;
+}
+button {
+  padding: 10px;
+  width: 20%;
+  cursor: pointer;
+}

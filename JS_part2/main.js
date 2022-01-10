@@ -10,15 +10,21 @@ var arr2d = [
     [4,5,6],
     [7,8,9],
 ];
-let value = arr2d[2][0];
-console.log(value);
 
+// access value in array 
+
+let value = arr2d[2][0];
+
+// get subarray 
+let subArray = arr.slice(0,3);
 
 /* create empty dictionary */
 var dictionary = {};
 var student = {name:"kea",age:"24",sex:"male"};
+
+// get value of key
+
 let key = student.name ;
-console.log(key);
 /* add value for a new key */
 
 student[favorite] = "fooball";
@@ -27,4 +33,4 @@ student["age"] = 21;
 
 /* remove key from object  */
 delete student["age"];
-console.log(student);
+
