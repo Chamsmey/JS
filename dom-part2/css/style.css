@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{  
+    background: gray;
+}
+.container {
+    width: 50%;
+}
+ul{
+    cursor: pointer;
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    background: blue;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    list-style: none;
+}
+li,span{
+    color: white;
+    font-size: 20px;
+}
+.delete{
+    padding: 10px;
+    background: red;
+    border-radius: 10px;
+}
