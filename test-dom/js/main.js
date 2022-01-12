@@ -6,8 +6,8 @@ console.log(h1.previousElementSibling);
 console.log(h1.nextElementSibling);
 console.log(h1.parentNode);
 //event by key -----------------
-document.addEventListener("keyup",function(e){
-    if (e.key==="Enter"){
+document.addEventListener("keyup", function(e) {
+    if (e.key === "Enter") {
         let input = document.querySelector("input");
         console.log(input.value);
     }

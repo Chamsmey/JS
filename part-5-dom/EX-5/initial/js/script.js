@@ -1,29 +1,18 @@
  // 1- Get the list of books ( tips : use the querySelectorAll )
  // TODO
- const listBook = document.querySelector("ul");
- //childen are element of ul get childen
- let numberOfchilds = (listBook.children).length;
-
- const numberOFbook = document.querySelector("#books-number");
- const bookTitle = document.querySelector("#books-titles");
- const span = document.createElement("span");
- let valueOfspan = "";
- //get number of ul's children
- numberOFbook.textContent = numberOfchilds;
- console.log(numberOfchilds);
- // loop on ul's children 
- for (let child of(listBook.children)) {
-     //get value of ul's children by textcontent
-     valueOfspan += child.firstElementChild.textContent + ","
-     console.log(child.firstElementChild.textContent);
+ const bookList = document.querySelectorAll(".book-name");
+ eachbooks = "";
+ console.log(bookList.length);
+ for (book of bookList) {
+     eachbooks += book.textContent + ","
  }
- span.textContent = valueOfspan;
- //append span into p
- bookTitle.appendChild(span);
- console.log(valueOfspan);
+ console.log(eachbooks);
+ const titles = document.querySelector("#books-titles");
+ titles.textContent = eachbooks;
  // 2- Display the number of books on paragrah "books-number"
  // TODO
-
+ const bookNumber = document.querySelector("#books-number");
 
  // 3- Display the title of the books  on paragrah "books-titles"
- // TODO
+ // TO
+ bookNumber.textContent = bookList.length;
