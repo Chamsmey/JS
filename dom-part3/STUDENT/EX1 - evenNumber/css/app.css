@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Battambang&display=swap");
+body {
+  background: #eee;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Battambang", sans-serif;
+  flex-direction: column;
+}
+.container {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background: #0c8cf5;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 10px;
+}
+span {
+  opacity: 0;
+}
