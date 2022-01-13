@@ -1,0 +1,47 @@
+body {
+  background: #eee;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 80%;
+  background: #fff;
+}
+#ball-area {
+  width: 100%;
+  height: 60vh;
+  border: 1px solid;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  position: relative;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+}
+
+#ball {
+  width: 100px;
+  height: 100px;
+  background: orange;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.btn-space {
+  text-align: center;
+  margin-bottom: 10px;
+}
+button {
+  cursor: pointer;
+  font-size: 20px;
+}
+.btn-center button {
+  width: 5%;
+}
+.btn-top button,
+.btn-bottom button {
+  height: 50px;
+}
