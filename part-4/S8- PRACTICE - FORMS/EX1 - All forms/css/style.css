@@ -1,0 +1,38 @@
+.container {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 80px;
+    float: left;
+    margin-left: 100px;
+}
+input {
+    margin-top: 10px;
+}
+input[type='text'],
+input[type='email'] {
+    padding: 10px;
+    width: 300px;
+    border:1px solid;
+    border-radius: 40px;
+    outline: none;
+}
+select {
+    padding: 10px;
+    width: 200px;
+    border:1px solid;
+    outline: none;
+}
+textarea {
+    resize: none;
+}
+#btn {
+    padding: 12px;
+    border:none;
+    border-radius: 40px;
+    outline: none;
+    cursor: pointer;
+    margin-left: 230px;
+}
+span {
+    color:red;
+}

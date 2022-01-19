@@ -1,0 +1,37 @@
+body {
+    background: #eec;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+}
+input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+input[type='color'] {
+    border:none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dashboard {
+    background: #fff;
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+}
+p {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}

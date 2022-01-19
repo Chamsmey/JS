@@ -10,6 +10,23 @@ function deleteBook(event) {
 
 function addBook(event) {
     event.preventDefault();
+    if (inputName.value !== "") {
+
+        let li = document.createElement("li");
+        let title = document.createElement("span");
+        let deletes = document.createElement("span");
+
+        title.classList.add("name");
+        deletes.classList.add("delete");
+
+        title.textContent = inputName.value;
+        deletes.textContent = "delete";
+
+        li.appendChild(title);
+        li.appendChild(deletes);
+        ul.appendChild(li);
+    }
+    inputName.value = "";
 
     // 1- Get the book name from the input field
 
@@ -27,13 +44,21 @@ let nameSearced = "";
 
 function searchBook(event) {
     if (event.key === "Enter") {
+        event.preventDefault();
         console.log(nameSearced);
     }
-    nameSearced += event.key;
-    console.log(event.key);
+    
     // 1- Get the search text
-
+    nameSearced = event.key;
+    console.log(nameSearced);
     // 2- Loop on all LI
+    let li = document.querySelectorAll("li");
+    li.forEach(element => {
+    let bookName = element.firstElementChild.textContent;
+    if (bookName.indexOf(nameSearced)===-1){
+        element.style.display ="none";
+    }
+    });
 
     // Update the style of the LI (visible or hidden)
 
@@ -71,14 +96,12 @@ const ul = document.querySelector("ul");
 const inputName = document.querySelector("#add-book-textfield");
 const addButton = document.querySelector("button");
 
-
-addButton.addEventListener("click", addBooks)
-console.log(inputName);
+//event ------------------------------
 
 bookList.addEventListener("click", deleteBook);
 
-let addForm = document.getElementById("add-book");
-addForm.addEventListener("submit", addBook);
+let addForm = document.getElementById("add-book").lastElementChild;
+addForm.addEventListener("click", addBook);
 
 let searchBookInput = document
     .getElementById("search-books")
