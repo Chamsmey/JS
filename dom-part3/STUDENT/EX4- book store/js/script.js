@@ -11,33 +11,33 @@ function deleteBook(event) {
 function addBook(event) {
     event.preventDefault();
     if (inputName.value !== "") {
+        // 1- Get the book name from the input field
 
-        let li = document.createElement("li");
+        // 2- Create a new span bookName for the book name, class name = name
         let title = document.createElement("span");
-        let deletes = document.createElement("span");
-
         title.classList.add("name");
-        deletes.classList.add("delete");
+
 
         title.textContent = inputName.value;
+        // 3- Create a new span deleteBtn for the button delete, class name = delete
+        let deletes = document.createElement("span");
         deletes.textContent = "delete";
+        deletes.classList.add("delete");
+        // 4- Create a new li
+        let li = document.createElement("li");
 
+
+        // 5- Add bookName and deleteBtn to li and li to the  bookList UL
         li.appendChild(title);
         li.appendChild(deletes);
-        ul.appendChild(li);
+        bookList.appendChild(li);
+
     }
+
+
+
+
     inputName.value = "";
-
-    // 1- Get the book name from the input field
-
-    // 2- Create a new spam bookName for the book name, class name = name
-
-
-    // 3- Create a new spam deleteBtn for the button delete, class name = delete
-
-    // 4- Create a new li
-
-    // 5- Add bookName and deleteBtn to li and li to the  bookList UL
 
 }
 let nameSearced = "";
@@ -47,54 +47,28 @@ function searchBook(event) {
         event.preventDefault();
         console.log(nameSearced);
     }
-    
+
     // 1- Get the search text
     nameSearced = event.key;
     console.log(nameSearced);
     // 2- Loop on all LI
     let li = document.querySelectorAll("li");
     li.forEach(element => {
-    let bookName = element.firstElementChild.textContent;
-    if (bookName.indexOf(nameSearced)===-1){
-        element.style.display ="none";
-    }
+        let bookName = element.firstElementChild.textContent;
+        if (bookName.indexOf(nameSearced) === -1) {
+            element.style.display = "none";
+        }
     });
 
     // Update the style of the LI (visible or hidden)
 
 }
 
-function findBook() {
-    console.log("searching");
-}
-
-function addBooks() {
-    if (inputName.value !== "") {
-
-        let li = document.createElement("li");
-        let title = document.createElement("span");
-        let deletes = document.createElement("span");
-
-        title.classList.add("name");
-        deletes.classList.add("delete");
-
-        title.textContent = inputName.value;
-        deletes.textContent = "delete";
-
-        li.appendChild(title);
-        li.appendChild(deletes);
-        ul.appendChild(li);
-    }
-    inputName.value = "";
-}
-
-
-
 //  MAIN -------------------------------------------------------------
 let bookList = document.querySelector("#book-list ul");
-const ul = document.querySelector("ul");
+
 const inputName = document.querySelector("#add-book-textfield");
-const addButton = document.querySelector("button");
+
 
 //event ------------------------------
 
