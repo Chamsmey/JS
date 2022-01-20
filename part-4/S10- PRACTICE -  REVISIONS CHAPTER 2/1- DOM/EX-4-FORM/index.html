@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script src="js/app.js" defer></script>
+</head>
+
+<body>
+    <form>
+        <!-- Radio -->
+        <input type="radio" name="gender" value="Male" checked> Male 
+        <input type="radio" name="gender" value="Female"> Female 
+        <input type="radio" name="gender" value="Other"> Other 
+        <hr>
+        <!-- checkbox -->
+        <input type="checkbox" name="teacher" value="RONAN" checked> RONAN 
+        <input type="checkbox" name="teacher" value="RADY"> RADY 
+        <input type="checkbox" name="teacher" value="HIM"> HIM 
+        <input type="checkbox" name="teacher" value="CLEMENT"> CLEMENT 
+        <input type="checkbox" name="teacher" value="EDOUARD"> EDOUARD 
+        <hr>
+        <!-- multiple select -->
+        <select id="select-meal-type" multiple="multiple">
+            <option value="Breakfast" selected>Breakfast</option>
+            <option value="Lunch">Lunch</option>
+            <option value="Dinner">Dinner</option>
+            <option value="Snacks">Snacks</option>
+            <option value="Dessert">Dessert</option>
+        </select>
+        <hr>
+    </form>
+    <div> 
+        <span class="gender" style="color: orange;"></span> <br>
+        <span class="teacher" style="color: teal;"></span><br>
+        <span class="meal" style="color: purple;"></span>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+body {
+    font-family: sans-serif;
+    background: #eec;
+}
+
+.container {
+    width: 40%;
+    margin: auto;
+}
+.card {
+    background: #fff;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.card-img .movie {
+    width: 100%;
+}
+.card-body {
+    padding: 10px;
+}
+.card-title {
+    margin: 0;
+    color: green;
+}
+.description {
+    line-height: 1.4;
+    opacity: 0.8;
+}
+.card-footer {
+    border-top: 1px solid grey;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.8;
+}
+#date {
+    color: teal;
+}
+#author {
+    color: orange;
+}

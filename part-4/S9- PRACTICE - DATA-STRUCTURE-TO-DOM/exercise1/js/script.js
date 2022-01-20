@@ -22,7 +22,6 @@ function displayArray(array) {
   
   // 3- The priority defines the color of your item (1 (HIGHT) = red, 0 (LOW) = grey)
   let items = document.querySelectorAll(".item");
- 
   for (let index in array){
     if (array[index]["priority"]===1){
       console.log(array[index]["priority"]);

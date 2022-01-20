@@ -56,16 +56,33 @@ function addItem() {
 
 function showImportant() {
   // -1  Create a new list with only the tasks of priority HIGHT ( = 1 )
+  let importantTasks =[];
+  for (let task of tasks){
+    if(task.priority ===1){
+      importantTasks.push(task);
+    }
+    console.log(task);
+  } 
   // -2 Call the displayArray with this new list
+  displayArray(importantTasks);
 }
 
 function showNotImportant() {
   // -1  Create a new list with only the tasks of priority LOW ( = 0 )
+  notImportantTasks = [];
+  for (let task of tasks){
+    if (task.priority ===0){
+      notImportantTasks.push(task);
+
+    }
+    displayArray(notImportantTasks);
+  }
   // -2 Call the displayArray with this new list
 }
 
 function showAll() {
   // -1 Call the displayArray with the  full list (all tasks)
+  displayArray(tasks);
 }
 
 // ----------------------------------------------------------------------------
