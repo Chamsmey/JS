@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Get value from form</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <form action="#">
+          Username: <input type="text" id="username" /><br />
+          Email: <input type="email" id="email" /><br />
+
+          <input
+            type="radio"
+            name="genderSelect"
+            id="maleRadio"
+            checked
+            value="Male"
+          />Male
+          <input
+            type="radio"
+            name="genderSelect"
+            id="femaleRadio"
+            value="Female"
+          />Female <br />
+          Choose your favorite fruits:
+          <select name="fruit" id="fruit">
+            <option value="Banana">Banana</option>
+            <option value="Mango">Mango</option>
+            <option value="Coconut">Coconut</option>
+          </select>
+          <br />
+          <p>favorit subjects:</p>
+          <input type="checkbox" class="subject" value="CMS" />CMS
+          <input type="checkbox" class="subject" value="JavaScript" />JavaScript
+          <input type="checkbox" class="subject" value="HTML-CSS" />HTML-CSS
+          <input type="checkbox" class="subject" value="Design" />Design
+          <br />
+          <textarea name="message" id="sms" cols="45" rows="5"></textarea><br />
+          <button id="applyButton" type="button">Submit data</button>
+        </form>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <p>Username: <span id="getUsername"></span></p>
+        <p>Email: <span id="getEmail"></span></p>
+        <p>Gender: <span id="getGender"></span></p>
+        <p>Favorit Fruits: <span id="getFruit"></span></p>
+        <p>Favorit subjects: <span id="getSubject"></span></p>
+        <p>Message: <span id="getMessage"></span></p>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
